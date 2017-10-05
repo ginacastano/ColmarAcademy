@@ -1,0 +1,38 @@
+html{
+  font-size: 16pt;
+}
+
+/* header section */
+header{
+  height: 64px;
+  padding: 16px 24px;
+}
+
+header ul{
+  display: inline;
+}
+
+header li{
+  padding-right: 16px;
+}
+
+/* banner section */
+#banner{
+  width: 100%;
+  background-color: lightgrey;
+  display: flex;
+}
+
+#banner-image{
+  width: 60%;
+  padding: 32px 24px;
+}
+
+#banner-text{
+  display: flex;
+  flex-direction: column;
+}
+
+#banner-button{
+  background-color: darkgrey;
+}
