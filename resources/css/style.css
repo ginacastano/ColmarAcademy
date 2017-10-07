@@ -1,5 +1,6 @@
 html{
   font-size: 16pt;
+  font-family: Helvetica;
 }
 
 /* header section */
@@ -30,7 +31,7 @@ header li{
   width: 25%;
   display: flex;
   flex-direction: column;
-
+  align-content:  center;
 }
 
 #banner-text h1{
@@ -45,4 +46,116 @@ header li{
 #banner-button{
   background-color: darkgrey;
   padding: 8px 0;
+}
+
+/* info section */
+#info{
+  width: 100%;
+  display: flex;
+}
+
+#info-main{
+  width: 60%;
+  margin: 32px 24px;
+}
+
+#info-main h1{
+  font-size: 1.5rem;
+}
+
+#info-quote{
+  font-size: 1rem;
+}
+
+#info-quote-author{
+  font-size: .75rem;
+}
+
+#info-items{
+  width: 40%;
+}
+
+#info-items{
+  display: flex;
+  flex-direction: column;
+}
+
+#orientation-image{
+  background-image: url("../resources/images/information-orientation.jpg");
+  background-size: cover;
+}
+
+#campus-image{
+  background-image: url("../resources/images/information-campus.jpg");
+  background-size: cover;
+}
+
+#guest-image{
+  background-image: url("../resources/images/information-guest-lecture.jpg");
+  background-size: cover;
+}
+
+/* courses section */
+#courses{
+  display: flex;
+  background-color: lightgrey;
+  padding: 16px 56px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#courses h1{
+  text-align: center;
+  padding: 16px 0px;
+  width: 100%;
+  font-size: 2rem;
+}
+#courses-container{
+  display: inline-flex;
+  align-content: space-between;
+  padding: 16px;
+  width: 100%;
+}
+
+.course-container{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin: 0px 16px;
+}
+
+.course-container img{
+  height: auto;
+}
+
+.course-text-container{
+  background-color: white;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 24px;
+  height: 100%;
+}
+
+.course-text-container span{
+  display: block;
+}
+
+.course-title{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.courses-label{
+  text-transform:uppercase;
+  padding: 8px 0px;
+  font-size: .9rem;
+  color: grey;
+}
+
+.course-description{
+  font-size: .9rem;
+  color: grey;
+  line-height: 1.5;
 }
