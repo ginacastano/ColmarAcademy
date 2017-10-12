@@ -10,12 +10,13 @@ div{
 h1{
   font-family: Playfair Display;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  line-height: 1.5;
 }
 
 h2{
   font-size: 1.25rem;
-  line-height: 1;
+  line-height: 1.5;
   font-weight: bold;
 }
 
@@ -26,8 +27,6 @@ h3{
 }
 
 /* header section */
-
-
 header .content {
   display: flex;
   align-items: center;
@@ -38,8 +37,6 @@ header .content {
 header nav ul {
   display: flex;
 }
-
-
 
 nav li {
   padding-left: 1rem;
@@ -135,7 +132,6 @@ header .mobile {
     justify-content:flex-start;
     padding: 32px 16px;
   }
-
 }
 /* info section */
 #info{
@@ -173,7 +169,6 @@ header .mobile {
   background-image: url("../images/information-orientation.jpg");
   background-size: cover;
   width: 35%;
-  height: auto;
   margin: 16px;
 }
 
@@ -181,16 +176,14 @@ header .mobile {
   background-image: url("../images/information-campus.jpg");
   background-size: cover;
   width: 35%;
-  height: auto;
   margin: 16px;
 }
 
 #guest-image{
   background-image: url("../images/information-guest-lecture.jpg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 35%;
- height: auto;
   margin: 16px;
 }
 
@@ -209,7 +202,47 @@ header .mobile {
   text-decoration: none;
   font-size: .75rem;
   font-weight: bold;
+  color: blue;
 }
+
+@media only screen and (max-width: 760px) {
+  #info-main{
+    display: none;
+  }
+  #info-items{
+    width: 100%;
+  }
+
+  .info-item{
+    display: flex;
+    flex-direction: column;
+  }
+  #orientation-image{
+    background-image: url("../images/information-orientation-mobile.jpg");
+    background-size: cover;
+    width: 100%;
+
+  }
+
+  #campus-image{
+    background-image: url("../images/information-campus-mobile.jpg");
+    background-size: cover;
+    width: 100%;
+  }
+
+  #guest-image{
+    background-image: url("../images/information-guest-lecture-mobile.jpg");
+    background-size: cover;
+    width: 100%;
+
+  }
+  .info-item-text{
+    width: 100%;
+    padding-left: 32px;
+  }
+
+}
+
 /* courses section */
 #courses{
   display: flex;
@@ -269,6 +302,42 @@ header .mobile {
   font-size: .9rem;
   color: grey;
   line-height: 1.5;
+}
+
+@media only screen and (max-width: 760px) {
+  #courses{
+    background-color: white;
+  }
+
+  #courses-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .course-container img{
+    display: none;
+  }
+
+  .course-container h3{
+    background-color: lightgrey;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+  }
+
+  .course-container h3:last-child{
+    margin-bottom: 0px;
+  }
+  .course-container{
+    width: 100%;
+  }
+  .courses-label span{
+    display: none !important;
+  }
+
+  .course-description span{
+    display: none !important;
+  }
 }
 
 /* thesis section */
@@ -338,7 +407,7 @@ header .mobile {
     display: none;
   }
 
-  h3{
+  #thesis-main  h3{
     display: none;
   }
 }
